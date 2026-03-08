@@ -1,0 +1,37 @@
+.preference-level-control {
+  display: grid;
+  gap: 8px;
+}
+
+.preference-level-control__label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.preference-level-control__options {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.preference-level-control__chip {
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #111827;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+
+  &:hover {
+    background: #f9fafb;
+  }
+
+  &.is-active {
+    background: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+  }
+}

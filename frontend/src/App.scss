@@ -1,0 +1,123 @@
+.app-shell {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #f3f4f6;
+}
+
+.app-shell__menu-btn {
+  position: fixed;
+  top: 14px;
+  left: 14px;
+  z-index: 2200;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  font-size: 22px;
+  cursor: pointer;
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease, opacity 160ms ease;
+
+  &:hover {
+    background: #f9fafb;
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: scale(0.96);
+  }
+}
+
+.app-shell__menu-btn.is-hidden {
+  opacity: 0;
+  transform: scale(0.9);
+  pointer-events: none;
+}
+
+/* ===== Debug top nav (only rendered when ?debug=1) ===== */
+
+.app-shell.is-debug {
+  .app-shell__main {
+    padding-top: 56px; /* make room for debug bar */
+  }
+
+  .app-shell__status-banner {
+    top: 64px; /* push below debug bar */
+  }
+}
+
+.debug-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.98);
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}
+
+.debug-nav__title {
+  font-weight: 900;
+  color: #b91c1c;
+  letter-spacing: 0.02em;
+}
+
+.debug-nav label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.debug-nav select {
+  height: 34px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  padding: 0 10px;
+  background: #fff;
+}
+
+.debug-nav button.secondary {
+  background: #fff;
+  color: #111827;
+}
+
+@media (max-width: 768px) {
+  .debug-nav {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+
+.app-shell__main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.app-shell__status-banner {
+  position: fixed;
+  top: 14px;
+  left: 68px;
+  z-index: 1100;
+  background: rgba(255, 255, 255, 0.96);
+  color: #111827;
+  padding: 10px 14px;
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  font-weight: 600;
+}
+
+.app-shell__status-banner--error {
+  color: #b91c1c;
+}
