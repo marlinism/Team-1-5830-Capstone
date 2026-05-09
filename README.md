@@ -141,8 +141,8 @@ User Input (Destination + Preferences)
 
 
 ## Data Pipeline
-![DataPipeline1](images/DataPipeline1)
-![DataPipeline2](images/DataPipeline2)
+![DataPipeline1](images/DataPipeline1.png)
+![DataPipeline2](images/DataPipeline2.png)
 
 ---
 
