@@ -139,6 +139,13 @@ User Input (Destination + Preferences)
 
 ---
 
+
+## Data Pipeline
+![DataPipeline1](images/DataPipeline1)
+![DataPipeline2](images/DataPipeline2)
+
+---
+
 ## 📂 Project Structure
 
 ```bash
@@ -194,11 +201,17 @@ Smart-Park-Seattle/
 
 ---
 
-## 👨‍💻 Team
+## 👨‍💻 Team Credit
 
-* Nayan Makwana
+### Front-end
+* Marlin Banh
+
+### MV-STGCN:
 * Marlin Banh
 * Yunsung Choi
+
+### ST-GNN:
+* Nayan Makwana
 * Samarth Tanwar
 
 ---
